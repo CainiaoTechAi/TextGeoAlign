@@ -1,0 +1,25 @@
+"batch_size_train": 4
+
+mgeo_train_file:  'data/train_dataset.jsonl'
+mgeo_val_file: 'data/dev_dataset.jsonl'                
+train_dataset_filepath: "data/train_dataset_use_gis.pth"
+val_dataset_filepath: 'data/val_dataset_use_gis_1000.pth'
+mgeo_test_file: 'data/test_dataset.jsonl'
+test_dataset_filepath: 'data/test_dataset_use_gis_1000.pth'
+same_addr_file: 'data/same_address_pairs.npy'
+diff_addr_file: 'data/different_address_pairs.npy'
+same_poi_multiview_file: "data/same_poi_views_1k.csv"
+train_poi_db_file: "data/mgeo_poi_database_train_use_negative.csv"
+
+use_query_gis: False
+lng_mean: 120.22537389613467
+lng_std: 0.13344521724616895
+lat_mean: 30.265117058856283
+lat_std: 0.10241391371600085
+
+# TextGeoAlign
+max_distance: 203075
+
+# 数据处理
+addr_suffix: ["停车场","东门","西门","南门","北门","美食广场","栋","号楼","地下","入口", 
+"驿站","菜鸟驿站","前台","待收点"]
